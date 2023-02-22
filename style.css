@@ -1,0 +1,354 @@
+/* responsive design */
+
+/* design for mobile */
+
+*{
+    box-sizing: border-box;
+    margin: 0px; 
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to top, #FFFFFF 0%, #F0F1FF 100%);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 16px 16px 38px 0px;
+    }
+
+.topskilled{
+    color: #13183F;
+    font-weight: 800;
+    font-size: 28px;
+    }
+
+.topstart{
+    background-color: #13183F;
+    color: white;
+    border: none;
+    border-radius: 28px;
+    font-weight: 700;
+    font-size: 16px;
+    height: 48px;
+    width: 140px;
+    margin-right: 15px;
+    }
+
+.topstart:hover{
+    cursor: pointer;
+    background-color: #666CA3;
+    } 
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #13183F;
+    height: 120px;
+    width: 100%;
+    }
+
+.footer{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+    padding: 38px 20px 32px 18px;
+    }    
+
+.bottomstart{
+    background: linear-gradient(to top,  #F02AA6, #4851FF);
+    color: white;
+    border: none;
+    border-radius: 28px;
+    font-weight: 700;
+    font-size: 16px;
+    height: 48px;
+    width: 140px;
+    }
+
+.bottomstart:hover{
+    cursor: pointer;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    }
+    
+
+.bottomskilled{
+    font-size: 28px;
+    }
+
+h1{
+    color: #13183F;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 51px;
+    }
+
+.generalinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 0px 0px 18px;
+    }    
+
+.maximize-card{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 375px;
+    }
+ 
+.maxibutton{
+     height: 56px;
+     width: 167px;
+     border-radius: 31.5px;
+     background: linear-gradient(to top, #F02AA6, #FF6F48);
+     color: white;
+     border: none;
+     font-weight: 700;
+     font-size: 16px;
+     margin-top: 24px;
+     margin-bottom: 70px;
+    }
+
+.maxibutton:hover{
+    cursor: pointer;
+    opacity: 50%;
+    }
+
+.hero-mobile{
+   max-width: 375px;
+   }  
+
+.hero-tablet{
+    display: none;
+    } 
+
+.hero-desktop{
+    display: none;
+    } 
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0px 10px 10px;
+    overflow: hidden;
+    }
+ 
+h2{
+    color: white;
+    background: linear-gradient(to top, #F02AA6, #FF6F48);
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    width: 343px;
+    height: 120px;
+    border-radius: 10px;
+    padding:  24px 29px 32px 28px;
+    margin-top: 20px;
+    margin-left: 10px;
+    }
+
+h3{
+   color: #13183F;
+   font-weight: 800;
+   }
+
+.pcard{
+    color: #83869A;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    height: 78px;
+    width: 286px;
+    margin-bottom: 24px;
+    margin-top: 16px;
+    }
+
+.p-maxi{
+   height: 78px;
+   width: 343px;
+   color: #83869A;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 26px;
+   }
+
+.start{
+    color: #F74780;
+    font-size: 18px;
+    font-weight: 700;
+    }
+
+.start:hover{
+    cursor: pointer;
+    }
+
+.course{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    height: 259px;
+    width: 343px;
+    border-radius: 10px;
+    padding-left: 28px;
+    }
+
+.icons {
+    margin-bottom: -35px;
+    margin-left: 28px;
+    }
+
+.section-grid{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+    }
+
+ 
+    /*design for tablet*/
+
+@media screen and (min-width: 768px){
+    header{
+        gap: 460px;
+        position: relative;
+        z-index: 2;
+        }
+
+    h2{
+        height: 259px;
+        width: 339px;
+        padding: 56px 21px 139px 32px;
+        }
+  
+    .footer{
+        width: 100%;
+        }   
+
+    footer{
+        width: 100%;
+        padding: 0px 25px 0px 25px;    
+        }
+
+    .hero-mobile{
+        display: none;
+        }  
+    
+    .hero-desktop{
+        display: none;
+        }
+
+    .hero-tablet{
+        display: block;
+        display: inline;
+        position: relative;
+        width: 100%;
+        margin-left: 300px;
+        margin-top: -750px; 
+        z-index: 1;
+        overflow: hidden;       
+        }
+    
+    .maximize-card{
+        margin-top: 75px;
+        }
+     
+    .maxibutton{
+        margin-bottom: 180px;
+    }
+
+    .section-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 56px 11px;
+        }
+    }
+    
+/* designe for desktop */
+      
+ @media screen and (min-width: 960px){
+
+    .hero-mobile{
+        display: none;
+    }  
+
+    .hero-tablet{
+        display: none;
+    }  
+
+    .hero-desktop{
+        display: block;
+        display: inline;
+        position: relative;
+        width: 85%;
+        margin-left: 650px;
+        margin-top: -1000px;
+        z-index: 1;
+        overflow: hidden; 
+        }
+
+    header{
+        position: relative;
+        z-index: 2;
+        padding: 0px 100px 50px 100px;
+        }
+
+    .footer{
+        padding: 50px 100px 0px 100px;
+        }    
+
+    .section-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+        padding: 80px;
+        }
+        
+    h1{
+        font-size: 56px;
+        height: 143px;
+        width: 457px;
+        line-height: 70px;
+        }    
+
+    .p-maxi{
+        height: 84px;
+        width: 445px;
+        font-size: 18px;
+        }
+
+    p{
+        font-size: 18px;
+        height: 84px;
+        width: 286px;
+        line-height: 28px;
+        }
+
+    h2{
+        font-size: 32px;
+        line-height: 40px;
+        }
+
+    h3{
+        font-size: 24px;
+        }
+
+    .maximize-card{
+        margin: 135px 0px 0px 100px;
+        }    
+    }
